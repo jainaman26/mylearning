@@ -1,12 +1,67 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <link rel="shortcut icon" href="http://static.tmimgcdn.com/img/favicon.ico">
+  <link rel="icon" href="http://static.tmimgcdn.com/img/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/hamburger-menu.js"></script>
+</head>
+
 <body>
-
-<video width="400" controls>
-  <source src="Wildlife.wmv" type="video/wmv">
-  Your browser does not support HTML5 video.
-</video>
-
-
+<div id="pgcontainer">
+  <header>
+    <div id="navbar">
+      <a href="#" class="menubtn">menu</a>
+      <!-- use captain icon for toggle menu -->
+      <div id="hamburgermenu">
+        <ul>
+          <li><a href="#">Item1 <span class="arrow"></span></a>
+			<ul class="childItem">
+			  <li><a href="#">Child Item1</a></li>
+			  <li><a href="#">Child Item2</a></li>
+			  <li><a href="#">Child Item3</a></li>
+			</ul>
+		  </li>
+          <li><a href="#">Item2 <span class="arrow"></span></a>
+			<ul class="childItem">
+			  <li><a href="#">Child Item1</a></li>
+			  <li><a href="#">Child Item2</a></li>
+			  <li><a href="#">Child Item3</a></li>
+			</ul>
+		  </li>
+          <li><a href="#">Item3 <span class="arrow"></span></a>
+			<ul class="childItem">
+			  <li><a href="#">Child Item1</a></li>
+			  <li><a href="#">Child Item2</a></li>
+			  <li><a href="#">Child Item3</a></li>
+			</ul>
+		  </li>
+          <li><a href="#">Item4 <span class="arrow"></span></a>
+			<ul class="childItem">
+			  <li><a href="#">Child Item1</a></li>
+			  <li><a href="#">Child Item2</a></li>
+			  <li><a href="#">Child Item3</a></li>
+			</ul>
+		  </li>
+        </ul>
+      </div>
+    </div>
+	<div class="branding">
+	
+    </div>
+	<div class="branding2">
+		<div class="searchIcon"></div>
+		<input class="search" type="text" placeholder="Search here"/>
+    </div>
+	
+	<div class="searchBtn">
+	<div class="searchTxt">Search</div>
+    </div>
+    <div class="overlay"></div>
+  </header>
+</div><!-- @end #pgcontainer -->
 </body>
 </html>
