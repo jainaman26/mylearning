@@ -248,8 +248,15 @@
         flashVersion: flashVersion
     };
 }(this));
-var txt = "'OS: ' + jscd.os +' '+ jscd.osVersion + '\n'+ 'Browser: ' + jscd.browser +' '+ jscd.browserMajorVersion ' (' + jscd.browserVersion + ')\n'    'Mobile: ' + jscd.mobile + '\n'    'Flash: ' + jscd.flashVersion + '\n' +  'Cookies: ' + jscd.cookies + '\n' +    'Screen Size: ' + jscd.screen + '\n\n' +    'Full User Agent: ' + navigator.userAgent";
 
+var txt = "";
+txt += "<p>OS: " + jscd.os +' '+ jscd.osVersion  + "</p>";
+txt += "<p>Browser : " + jscd.browser +' '+ jscd.browserMajorVersion +
+      ' (' + jscd.browserVersion + ')\n' + "</p>";
+txt += "<p>Mobile: " + jscd.mobile + "</p>";
+txt += "<p>Screen Size: " + jscd.screen + '\n\n' + "</p>";
+txt += "<p>Full User Agent: " + navigator.userAgent + "</p>";
+	
 document.getElementById("demo").innerHTML = txt;
 </script>
 </div><!-- @end #pgcontainer -->
